@@ -2,13 +2,13 @@ package customermailapplication;
 
 public class CustomerFactory {
     public static Customer createCustomer (String Type) {
-        if (type.equals("Regular")) {
+        if (Type.equals("Regular")) {
             return new RegularCustomer();
         }
-        else if (type.equals("Mountain")) {
+        else if (Type.equals("Mountain")) {
             return new MountainCustomer();
         }
-        else if (type.equals("Delinquent")) {
+        else if (Type.equals("Delinquent")) {
             return new DelinquentCustomer();
         }
         return null;
